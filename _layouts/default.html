@@ -23,7 +23,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
   </head>
-  <!--
+  
   <body id="myPage">
     <div id="header">
         <nav>
@@ -31,20 +31,14 @@
         </nav>
       </div>
   
-
     <div class="wrapper"> 
-
       <section>
         <div id="title">
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
         </div>
-
         {{ content }}
-
       </section>
-
     </div>
-    -->
 
     {% if site.google_analytics %}
       <script type="text/javascript">
@@ -55,7 +49,7 @@
         ga('create', '{{ site.google_analytics }}', 'auto');
         ga('send', 'pageview');
       </script>
-    {% endif %} 
+    {% endif %}
     
     
     <!-- This is all from the template-->
@@ -288,9 +282,9 @@
         <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
           <h3>Address</h3>
           <p>Swing by for a cup of coffee, or whatever.</p>
-          <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Chicago, US</p>
-          <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>
-          <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@test.com</p>
+          <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Chicago, US</p>
+          <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>
+          <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@test.com</p>
         </div>
         <div class="w3-col m7">
           <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
@@ -326,7 +320,6 @@
         mapTypeId:google.maps.MapTypeId.ROADMAP
       };
       var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
       var marker = new google.maps.Marker({
         position: myCenter,
       });
@@ -364,12 +357,10 @@
         x.style.paddingTop = "10%";
         x.style.display = "block";
     }
-
     // Close side navigation
     function w3_close() {
         document.getElementById("mySidebar").style.display = "none";
     }
-
     // Used to toggle the menu on smaller screens when clicking on the menu button
     function openNav() {
         var x = document.getElementById("navDemo");
