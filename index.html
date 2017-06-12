@@ -25,30 +25,20 @@
 
   </head>
   <body id="myPage">
-
-    {% if site.google_analytics %}
-      <script type="text/javascript">
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', '{{ site.google_analytics }}', 'auto');
-        ga('send', 'pageview');
-      </script>
-    {% endif %}
-    
-	  
+  
+  <script> window.addEventListener("hashchange", function() { scrollBy(0, -200) }) </script> <!-- stop nav bar from blocking content on anchor links -->
 	  
     <!-- Navbar -->
     <div class="w3-top">
-     <div class="w3-bar w3-theme-d2 w3-left-align">
-      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-	  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
-      <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
-      <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
-      <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
-     </div>
+		<div class="w3-theme-d2">
+			<div class="w3-cell-row w3-theme-d2" style="width:60%; height:120px"">
+				<img src="images/logobar.png" class="logobar w3-cell">
+				<a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white navitem w3-cell " >Team</a>
+				<a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white navitem w3-cell" >Work</a>
+				<a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white navitem w3-cell" >Price</a>
+				<a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white navitem w3-cell" >Contact</a>
+			</div>
+		</div>
 	</div>
 
       <!-- Navbar on small screens -->
@@ -65,17 +55,18 @@
 	
 	<!-- Slideshow -->
 	<br><br>
-<div class="w3-content w3-display-container w3-border w3-section">
+<div class="w3-content w3-display-container">
   <img class="mySlides" src="images/1Southampton.jpg" style="width:100%">
   <img class="mySlides" src="images/2Southampton.jpg" style="width:100%">
   <img class="mySlides" src="images/3Southampton.jpg" style="width:100%">
-  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle">
     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
   </div>
-  <script src="/scripts/slideShow.js"></script>
+
 </div>
+  <script src="/scripts/slideShow.js"></script>
 
 
 	
@@ -236,61 +227,33 @@
 
     <!-- Contact Container -->
     <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
-      <div class="w3-row">
-        <div class="w3-col m5">
-        <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
-          <h3>Address</h3>
-          <p>Swing by for a cup of coffee, or whatever.</p>
-          <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Chicago, US</p>
-          <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>
-          <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@test.com</p>
+      <div class="w3-margin">
+        <div>
+        <div class="w3-padding-16"><span class="w3-xlarge border-teal w3-bottombar">Contact Us</span></div>
+          <h5>Feel free to contact us for any questions or business inquiries</h5>
+          
         </div>
-        <div class="w3-col m7">
+        <div style="width:45%; margin:40px;">
           <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
-          <div class="w3-section">      
-            <label>Name</label>
-            <input class="w3-input" type="text" name="Name" required>
+          <div class="w3-section">
+			<p><i class="w3-text-teal w3-xlarge"></i>&#9993  email: perspectiveaerialmedia@gmail.com</p>
+            <input type="hidden">
           </div>
           <div class="w3-section">      
-            <label>Email</label>
-            <input class="w3-input" type="text" name="Email" required>
+            <p><i class="w3-text-teal w3-xlarge"></i>&#9742  Robin Worling: (613) 276-3533</p>
+			
           </div>
           <div class="w3-section">      
-            <label>Message</label>
-            <input class="w3-input" type="text" name="Message" required>
+            <p><i class="w3-text-teal w3-xlarge"></i>&#9742  Noam McGregor (613) 291-1130</p>
+			
           </div>  
-          <input class="w3-check" type="checkbox" checked name="Like">
-          <label>I Like it!</label>
           <button type="submit" class="w3-button w3-right w3-theme">Send</button>
           </form>
         </div>
       </div>
     </div>
 
-    <!-- Google Maps -->
-    <div id="googleMap" style="width:100%;height:420px;"></div>
-    <script>
-    function myMap()
-    {
-      myCenter=new google.maps.LatLng(41.878114, -87.629798);
-      var mapOptions= {
-        center:myCenter,
-        zoom:12, scrollwheel: false, draggable: false,
-        mapTypeId:google.maps.MapTypeId.ROADMAP
-      };
-      var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-      var marker = new google.maps.Marker({
-        position: myCenter,
-      });
-      marker.setMap(map);
-    }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-    <!--
-    To use this code on your website, get a free API key from Google.
-    Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
-    -->
-
+   
     <!-- Footer -->
     <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
       <h4>Follow Us</h4>
