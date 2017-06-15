@@ -20,3 +20,13 @@
 .w3-hover-theme:hover {color:#000 !important; background-color:#ffc107 !important}
 .w3-hover-text-theme:hover {color:#000000 !important}
 .w3-hover-border-theme:hover {border-color:#000000 !important}
+
+.mySlides {	display:none; border:2px solid #009688;}
+.w3-left, .w3-right, .w3-badge {cursor:pointer;}
+.w3-badge {height:18px;width:18px;padding:0;}
+.navitem {font-size:x-large;}
+.logobar {margin-bottom:10px; margin-left:70px;}
+
+
+#divteam {padding-left:50px;}
+#pteam {width:75%;}
